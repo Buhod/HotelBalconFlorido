@@ -6,7 +6,7 @@
     <title>Hotel Balcón Florido</title>
     <style>
         body {
-            font-family: Arial, sans-serif; /* Cambia la fuente a Arial (o cualquier otra fuente sin cursiva) */
+            font-family: Arial, sans-serif;
             background-color: #f5f3f4;
             color: #7d528a;
             text-align: center;
@@ -15,19 +15,43 @@
         h1 {
             color: #c2859e;
         }
-        img {
-            max-width: 100%;
-            height: auto;
-            margin-bottom: 10px;
+        .wifi-icon {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            background-color: #4caf50;
+            border-radius: 50%;
+            position: relative;
+            margin-right: 10px;
+        }
+        .signal-bar {
+            position: absolute;
+            bottom: 10%;
+            left: 10%;
+            width: 80%;
+            height: 10%;
+            background-color: #fff;
+            border-radius: 2px;
+        }
+        .signal-bar:nth-child(2) {
+            left: 35%;
+        }
+        .signal-bar:nth-child(3) {
+            left: 60%;
         }
     </style>
 </head>
 <body>
-    <h1>Acceso Wifiiii Hotel Balcón Florido</h1>
-    <img src="https://drive.google.com/uc?export=view&id=1Ltl11ou66xYDJocmoWJxwGiFBT6bp-t5" alt="Logo Balcón Florido" style="width: 200px;">
+    <h1>
+        <div class="wifi-icon">
+            <div class="signal-bar"></div>
+            <div class="signal-bar"></div>
+            <div class="signal-bar"></div>
+        </div>
+        Acceso Wifi Hotel Balcón Florido
+    </h1>
     <p>Bienvenidos a Hotel Balcón Florido, un lugar lleno de encanto y naturaleza.</p>
     <p>Nombre WiFi: HotelBalconFlorido</p>
     <p>Clave de WiFi: O7pdz9q1</p>
-    <img src="https://drive.google.com/uc?export=view&id=1i7uk3A34any4nMqun6zW6OzeBkKYXoXQ" alt="Código QR WiFi">
 </body>
 </html>
